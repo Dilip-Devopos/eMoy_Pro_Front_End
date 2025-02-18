@@ -22,7 +22,7 @@ class AuthService {
 
   AuthService() {
     if (true) {
-      redirectUri = "emoyproreferral://callback";
+      redirectUri = "localhost:30007";
     }
   }
 
