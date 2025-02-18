@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Copy the Flutter build output to NGINX web root
-COPY /web /usr/share/nginx/html
+COPY /build/web /usr/share/nginx/html
 
 # Expose port 80 for NGINX
 EXPOSE 80
