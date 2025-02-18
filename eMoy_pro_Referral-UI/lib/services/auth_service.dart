@@ -45,6 +45,8 @@ class AuthService {
       if (canOpen) {
         await launchUrl(
           url,
+          mode: LaunchMode.inAppWebView,
+          webOnlyWindowName: '_self',
         );
       } else {
         print('Error: Could not launch URL: $authUrl');
