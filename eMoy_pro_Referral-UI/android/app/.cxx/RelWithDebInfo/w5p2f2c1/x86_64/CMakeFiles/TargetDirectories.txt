@@ -1,0 +1,2 @@
+C:/src/flutter/Emoy_pro_Referral Project/Updated code/eMoy_pro_Referral UI/android/app/.cxx/RelWithDebInfo/w5p2f2c1/x86_64/CMakeFiles/edit_cache.dir
+C:/src/flutter/Emoy_pro_Referral Project/Updated code/eMoy_pro_Referral UI/android/app/.cxx/RelWithDebInfo/w5p2f2c1/x86_64/CMakeFiles/rebuild_cache.dir
