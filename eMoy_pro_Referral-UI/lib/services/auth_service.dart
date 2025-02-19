@@ -22,7 +22,7 @@ class AuthService {
 
   AuthService() {
     if (true) {
-      redirectUri = "localhost:30008";
+      redirectUri = 'localhost:30008';
     }
   }
 
