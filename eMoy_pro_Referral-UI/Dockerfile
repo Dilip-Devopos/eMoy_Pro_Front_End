@@ -1,17 +1,13 @@
-# Use the official NGINX image
-FROM nginx:alpine
+FROM python:3.9-alpine
 
 # Set the working directory
-WORKDIR /usr/share/nginx/html
+WORKDIR /app
 
-# Remove the default NGINX static files
-RUN rm -rf ./*
+# Copy Flutter web build files
+COPY build/web /app
 
-# Copy the Flutter build output to NGINX web root
-COPY /build/web /usr/share/nginx/html
+# Expose port 30008
+EXPOSE 30008
 
-# Expose port 80 for NGINX
-EXPOSE 80
-
-# Start NGINX
-CMD ["nginx", "-g", "daemon off;"]
+# Start Python HTTP Server on port 30008
+CMD ["python", "-m", "http.server", "30008"]
